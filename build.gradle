@@ -1,0 +1,18 @@
+apply plugin:'java'
+
+group = 'mystdeim'
+version = '0.1'
+
+ext {
+    vertxVersion = '3.4.2'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile "io.vertx:vertx-core:$vertxVersion"
+}
+
+
