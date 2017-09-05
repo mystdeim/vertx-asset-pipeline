@@ -12,6 +12,7 @@ repositories {
 }
 
 dependencies {
+    compile gradleApi()
     compile "io.vertx:vertx-core:$vertxVersion"
 }
 
