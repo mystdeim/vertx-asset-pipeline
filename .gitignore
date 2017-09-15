@@ -1,7 +1,6 @@
 **/.DS_Store
 /bin/
 /build/
-/gradle
 /logs/
 /.gradle/
 /.classpath

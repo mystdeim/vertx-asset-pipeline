@@ -1,0 +1,1 @@
+![alt text](https://api.travis-ci.org/mystdeim/vertx-asset-pipeline.svg?branch=master "Build status")
