@@ -8,6 +8,15 @@ import org.gradle.api.tasks.TaskAction;
  */
 public class AssetTask extends DefaultTask {
 
+    Engine engine;
+
+    public AssetTask() {
+        this.engine = new Engine(
+                "webroot",
+                "build/resources/main/webroot",
+                "assets");
+    }
+
     @TaskAction
     public void greet() {
         AssetPipelinePluginExtension extension = getProject().getExtensions().findByType(AssetPipelinePluginExtension.class);
@@ -15,6 +24,9 @@ public class AssetTask extends DefaultTask {
             extension = new AssetPipelinePluginExtension();
         }
 
-        System.out.println("hello world!");
+        String message = extension.getMessage();
+        System.out.println(message);
+
+//        engine.
     }
 }

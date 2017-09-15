@@ -5,7 +5,8 @@ package mystdeim.vertx;
  */
 public class AssetPipelinePluginExtension {
 
-    private String message = "Default Greeting from Gradle";
+    private String message = "Default Greeting from Gradle!!!";
+    private String vertxVersion = "3.4.2";
 
     public String getMessage() {
         return message;
@@ -15,4 +16,11 @@ public class AssetPipelinePluginExtension {
         this.message = message;
     }
 
+    public String getVertxVersion() {
+        return vertxVersion;
+    }
+
+    public void setVertxVersion(String vertxVersion) {
+        this.vertxVersion = vertxVersion;
+    }
 }

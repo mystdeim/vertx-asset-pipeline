@@ -1,19 +1,27 @@
-apply plugin:'java'
+apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: 'maven'
 
 group = 'mystdeim'
 version = '0.1'
 
 ext {
-    vertxVersion = '3.4.2'
+    vertxVersion = "3.4.2"
+    junitVerstion = "4.+"
+    yuiVersion = "2.4.+"
 }
 
 repositories {
+    mavenLocal()
     jcenter()
 }
 
 dependencies {
     compile gradleApi()
     compile "io.vertx:vertx-core:$vertxVersion"
+    compile "com.yahoo.platform.yui:yuicompressor:$yuiVersion"
+
+    testCompile "junit:junit:$junitVerstion"
 }
 
 
